@@ -6,14 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class activity_onboarding3 extends AppCompatActivity {
-    Button btnSkip, btnGetStarted;
+    ImageView btnSkip, btnGetStarted;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Hide the action bar
+        getSupportActionBar().hide();
+
         setContentView(R.layout.activity_onboarding3);
 
         btnSkip = findViewById(R.id.btnSkip);

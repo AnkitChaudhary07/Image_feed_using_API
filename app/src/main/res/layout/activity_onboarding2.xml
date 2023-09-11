@@ -1,47 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E0E0E0">
-
-    <TextView
-        android:layout_width="379dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="0dp"
-        android:text="Onboarding Screen 2"
-        android:textColor="#2196F3"
-        android:textSize="34sp"
-        android:textStyle="bold" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    android:orientation="vertical"
+    android:background="#B2EBF2">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="290dp"
         android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentBottom="true">
+        android:padding="25dp">
 
-        <Button
-            android:id="@+id/btnGetStarted"
-            android:layout_width="133dp"
-            android:layout_height="69dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="35dp"
-            android:text="Get Started" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="186dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="0dp"
+            app:srcCompat="@drawable/onboarding_next_button" />
 
-        <Button
-            android:id="@+id/btnSkip"
-            android:layout_width="90dp"
-            android:layout_height="69dp"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="35dp"
-            android:text="Skip" />
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="176dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Press 'NEXT' button to Stream memes..."
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic" />
     </LinearLayout>
 
-</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="15dp"
+        android:background="@android:color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="horizontal"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="186dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="0dp"
+            app:srcCompat="@drawable/onboarding_share_button" />
+
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="176dp"
+            android:text="Press 'SHARE' button to Stream memes..."
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btnGetStarted"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:layout_marginLeft="0dp"
+                app:srcCompat="@drawable/ellipse1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Start"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/btnSkip"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+
+                app:srcCompat="@drawable/ellipse2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="-8dp"
+                android:text="Skip"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
