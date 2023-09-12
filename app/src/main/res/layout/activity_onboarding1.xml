@@ -10,82 +10,75 @@
     <ImageView
         android:id="@+id/onboarding1_welcomeImage"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/_181sdp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/welcome" />
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/welcome"
+        android:layout_marginBottom="@dimen/_200sdp"/>
 
     <TextView
         android:layout_width="@dimen/_100sdp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="@dimen/_50sdp"
-        android:layout_marginTop="@dimen/_300sdp"
-        android:layout_marginEnd="@dimen/_50sdp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_360sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
         android:padding="@dimen/_10sdp"
-        android:text="MEME STREAM....\nPlace where you can stream unlimited streams and share them with your can friends."
+        android:text="WELCOME TO..\nMEME STREAM....\nPlace where you can stream unlimited streams and share them with your can friends."
         android:textColor="#212121"
         android:textSize="@dimen/_18ssp"
         android:textStyle="italic" />
 
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_buttons"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_65sdp"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
+        android:background="#B2DFDB">
 
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_marginStart="@dimen/_1sdp">
 
             <ImageView
                 android:id="@+id/btnGetStarted"
                 android:layout_width="match_parent"
-                android:layout_height="105dp"
-                android:layout_marginLeft="0dp"
+                android:layout_height="@dimen/_80sdp"
                 app:srcCompat="@drawable/ellipse1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="@dimen/_6sdp"
                 android:text="Start"
                 android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="@dimen/_15ssp" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="155dp"
-            android:layout_weight="1">
+            android:layout_marginStart="@dimen/_220sdp">
 
             <ImageView
                 android:id="@+id/btnSkip"
                 android:layout_width="match_parent"
-                android:layout_height="105dp"
+                android:layout_height="@dimen/_80sdp"
                 app:srcCompat="@drawable/ellipse2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="-8dp"
+                android:layout_marginLeft="@dimen/_1sdp"
                 android:text="Skip"
                 android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="20sp" />
+                android:textSize="@dimen/_15ssp"/>
         </FrameLayout>
 
-    </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </RelativeLayout>

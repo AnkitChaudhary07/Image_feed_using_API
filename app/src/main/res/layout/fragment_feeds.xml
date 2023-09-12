@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
+    android:padding="@dimen/_18sdp"
     android:background="#D7CCC8"
     android:orientation="vertical"
     tools:context=".Feeds_Fragment">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="@dimen/_350sdp"
         android:layout_gravity="center"
-        android:padding="15dp"
+        android:padding="@dimen/_5sdp"
         android:background="@drawable/image_border">
 
         <ImageView
@@ -32,8 +32,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="76dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:gravity="center">
 
         <Button
@@ -41,11 +41,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginEnd="80dp"
+            android:layout_marginEnd="@dimen/_60sdp"
             android:background="@drawable/share_button"
             android:text="Share"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="@dimen/_10ssp"
             android:textStyle="bold" />
 
         <Button
@@ -56,7 +56,7 @@
             android:background="@drawable/next_button"
             android:text="Next"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="@dimen/_10ssp"
             android:textStyle="bold" />
 
     </LinearLayout>

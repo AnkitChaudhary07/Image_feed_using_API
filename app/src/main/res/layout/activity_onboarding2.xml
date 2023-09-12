@@ -3,120 +3,115 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="0dp"
-    android:layout_margin="0dp"
     android:orientation="vertical"
     android:background="#B2EBF2">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="290dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
-        android:padding="25dp">
+        android:padding="@dimen/_15sdp">
 
         <ImageView
             android:id="@+id/imageView1"
-            android:layout_width="186dp"
-            android:layout_height="250dp"
-            android:layout_marginLeft="0dp"
-            app:srcCompat="@drawable/onboarding_next_button" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_70sdp"
+            app:srcCompat="@drawable/next" />
 
         <TextView
-            android:layout_width="116dp"
-            android:layout_height="176dp"
-            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Press 'NEXT' button to Stream memes..."
+            android:layout_marginTop="@dimen/_130sdp"
+            android:text="Press 'NEXT'\nbutton\nto Stream memes..."
             android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textSize="@dimen/_18ssp"
             android:textStyle="italic" />
-    </LinearLayout>
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_margin="15dp"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_margin="@dimen/_5sdp"
         android:background="@android:color/black" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="horizontal"
         android:padding="25dp">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="186dp"
-            android:layout_height="250dp"
-            android:layout_marginLeft="0dp"
-            app:srcCompat="@drawable/onboarding_share_button" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_20sdp"
+            app:srcCompat="@drawable/share" />
 
         <TextView
-            android:layout_width="116dp"
-            android:layout_height="176dp"
-            android:text="Press 'SHARE' button to Stream memes..."
-            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_140sdp"
+            android:text="Press 'SHARE' button\nto Stream memes..."
+            android:textSize="@dimen/_18ssp"
             android:textStyle="italic"
-            android:layout_gravity="center"
-            android:gravity="center"
             android:textColor="@color/black"/>
-    </LinearLayout>
+    </RelativeLayout>
 
-    <LinearLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_buttons"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/_65sdp"
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:background="#B2EBF2">
 
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_marginStart="@dimen/_1sdp">
 
             <ImageView
                 android:id="@+id/btnGetStarted"
                 android:layout_width="match_parent"
-                android:layout_height="105dp"
-                android:layout_marginLeft="0dp"
+                android:layout_height="@dimen/_80sdp"
                 app:srcCompat="@drawable/ellipse1" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="10dp"
+                android:layout_marginRight="@dimen/_6sdp"
                 android:text="Start"
+                android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/_15ssp" />
         </FrameLayout>
 
         <FrameLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="155dp"
-            android:layout_weight="1">
+            android:layout_marginStart="@dimen/_220sdp">
 
             <ImageView
                 android:id="@+id/btnSkip"
                 android:layout_width="match_parent"
-                android:layout_height="105dp"
-
+                android:layout_height="@dimen/_80sdp"
                 app:srcCompat="@drawable/ellipse2" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginRight="-8dp"
+                android:layout_marginLeft="@dimen/_1sdp"
                 android:text="Skip"
+                android:textStyle="bold"
                 android:textColor="#000000"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/_15ssp"/>
         </FrameLayout>
 
-    </LinearLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </LinearLayout>
